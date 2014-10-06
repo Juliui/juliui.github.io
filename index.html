@@ -15,7 +15,7 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function () {
-                var phrase = "Welcome back Administrator. What are your orders ?";
+                var phrase = "Welcome back Administrator. What are your orders for me ?";
                 var phraseArray = phrase.split(" ");
                 setInterval(function(){
                     phraseArray.forEach(function (word) {
@@ -26,7 +26,7 @@
                             start: function () {
                                 $('#main p').text(word);
                             }
-                        }).delay(500);
+                        }).delay(750);
                     });
                 }, 1000); //repeate time depends on the word count times 1 second
                 setInterval(function(){
